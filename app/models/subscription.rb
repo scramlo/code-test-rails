@@ -10,5 +10,7 @@
 #
 
 class Subscription < ApplicationRecord
+  has_many :members
+
   validates :name, :price, presence: true
 end

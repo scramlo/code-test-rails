@@ -6,5 +6,12 @@ RSpec.describe "Members", type: :request do
       get members_path
       expect(response).to have_http_status(200)
     end
+
+    it "returns a list of members" do
+      create_list(:member, 10)
+      get members_path
+      json = JSON.parse(response.body)
+      expect(json.size).to eq(10)
+    end
   end
 end

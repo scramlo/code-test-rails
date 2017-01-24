@@ -1,24 +1,24 @@
-# README
+# Code Test: Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Rails 5 app designed to provide a basic API for our code test.
 
-Things you may want to cover:
+### Quick start
 
-* Ruby version
+1. [Install ruby](http://rvm.io)
+> Recommended version >= 2.2
 
-* System dependencies
+1. Run `bundle install` to install gems
 
-* Configuration
+1. Run `bin/rails db:setup` to migrate and seed your development database
 
-* Database creation
+1. Run `bin/rails server` to start up the local development server
 
-* Database initialization
+You should get JSON output from http://localhost:3000/members
 
-* How to run the test suite
+### Testing
 
-* Services (job queues, cache servers, search engines, etc.)
+Run `bin/rspec` to run the test suite.
 
-* Deployment instructions
+### Todo
 
-* ...
+- [ ] Create docker setup as an alternative to installing ruby directly

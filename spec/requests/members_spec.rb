@@ -10,8 +10,15 @@ RSpec.describe "Members", type: :request do
     it "returns a list of members" do
       create_list(:member, 10)
       get members_path
-      json = JSON.parse(response.body)
-      expect(json.size).to eq(10)
+      member_list = JSON.parse(response.body)
+      expect(member_list.size).to eq(10)
+    end
+
+    it "returns member subscription information" do
+      create_list(:member, 10)
+      get members_path
+      member_list = JSON.parse(response.body)
+      expect(member_list[0]['subscription']).to be
     end
   end
 end

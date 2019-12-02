@@ -1,11 +1,12 @@
 # Code Test: Rails
 
-A simple Rails 5 app designed to provide a basic API for our code test.
+A simple Rails 6 app designed to provide a basic API for our code test.
 
-### Quick start
+### Requirements
 
-1. [Install ruby](http://rvm.io)
-> Recommended version >= 2.2
+1. [Ruby](http://rvm.io) (2.5+) or an environment like Docker (see below)
+
+### Setup
 
 1. Run `bundle install` to install gems
 

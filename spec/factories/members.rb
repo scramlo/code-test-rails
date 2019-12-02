@@ -15,7 +15,7 @@
 #  index_members_on_subscription_id  (subscription_id)
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :member do
     name { Faker::Name.name }
     email { Faker::Internet.email }

@@ -24,5 +24,5 @@ subscriptions = [
 Subscription.create(subscriptions)
 
 10.times do
-  FactoryGirl.create(:member, subscription_id: Subscription.pluck(:id).sample)
+  FactoryBot.create(:member, subscription_id: Subscription.pluck(:id).sample)
 end

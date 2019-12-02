@@ -9,9 +9,9 @@
 #  updated_at :datetime         not null
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :subscription do
-    name ["Silver", "Gold", "Platinum"].sample
+    name { ["Silver", "Gold", "Platinum"].sample }
     price { Faker::Number.decimal(2) }
   end
 end

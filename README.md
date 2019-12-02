@@ -20,6 +20,12 @@ You should get JSON output from http://localhost:3000/members
 
 Run `bin/rspec` to run the test suite.
 
-### Todo
+### Docker
 
-- [ ] Create docker setup as an alternative to installing ruby directly
+As an alternative to installing Ruby directly, you can use the provided Docker files to run the app and test suite.
+
+1. Run `docker-compose up -d` to start the Docker container (gems are installed and the server is booted automatically)
+1. Run `docker-compose exec web bin/rails db:setup` to set up the database
+1. Run `docker-compose exec web bin/rspec` to test
+
+If necessary, you can restart the Rails server with `docker-compose restart`

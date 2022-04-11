@@ -1,6 +1,6 @@
 # Code Test: Rails
 
-A simple Rails 6 app designed to provide a basic API for our code test.
+A simple Rails 6 app designed to provide a basic API for our code test!
 
 ### Requirements
 
@@ -14,7 +14,7 @@ A simple Rails 6 app designed to provide a basic API for our code test.
 
 1. Run `bin/rails server` to start up the local development server
 
-You should get JSON output from http://localhost:3000/members
+You should get JSON output from <http://localhost:3000/members>
 
 ### Testing
 

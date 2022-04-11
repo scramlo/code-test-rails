@@ -1,6 +1,6 @@
 # Code Test: Rails
 
-A simple Rails 6 app designed to provide a basic API for our code test!
+A simple Rails 6 app designed to provide a basic API for our code test.
 
 ### Requirements
 
